@@ -1,22 +1,19 @@
 {
-  "name": "electron-quick-start",
+  "name": "ptt-lol-anti-beggar",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An electron app to find beggar on LoL@ptt.cc",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "lint": "eslint *.js **/*.js"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "repository": "https://github.com/littlebtc/ptt-lol-anti-beggar",
+  "author": "littlebtc",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
   }
 }
