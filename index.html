@@ -2,15 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>抓乞丐</title>
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
+    <form id="form">
+      <p>輸入 PTT 網址，一行一個： </p>
+      <p><textarea rows="5" cols="50" id="urls"></textarea></p>
+      <p><button type="submit">通緝！</button></p>
+    </form>
+    <p>結果會出現在這裡：</p>
+    <textarea rows="24" cols="79" id="output"></textarea>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
